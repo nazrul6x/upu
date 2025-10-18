@@ -1,17 +1,17 @@
-# cyber-FCA: Unofficial Facebook Chat API
+# nazrul-FCA: Unofficial Facebook Chat API
 
 A lightweight, fast, and unofficial API to interact with Facebook Chat programmatically.
 
 ## Installation
 ```bash
-npm install cyber-fca
+npm install fca-nazrul
 ```
 
 ## Quick Start
 
 ### Login Example
 ```javascript
-const login = require('cyber-fca');
+const login = require('fca-nazrul');
 
 async function login() {
   try {
@@ -32,7 +32,7 @@ login();
 ### Send Message Example
 ```javascript
 const api = await login();
-api.sendMessage("Hello from cyber-FCA!", "friend_user_id");
+api.sendMessage("Hello from nazrul-FCA", "friend_user_id");
 ```
 
 ### Listen for Messages
@@ -54,3 +54,6 @@ api.listen((err, message) => {
 
 ## Disclaimer
 This is an **unofficial** API. Use at your own risk. Not affiliated with Facebook.
+
+
+##  FIX BY NAZRUL
