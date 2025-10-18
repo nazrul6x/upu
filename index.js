@@ -132,7 +132,7 @@ function buildAPI(globalOptions, html, jar) {
         return log.error('error', "Appstate is dead rechange it!", 'error');
     }
     userID = (tiktikCookie || userCookie).cookieString().split("=")[1];
-    //logger.log(`${cra(`[ CONNECT ]`)} Logged in as ${userID}`, "DATABASE");
+    //logger.log(`${cra(`[ CONNECT ]`)} LOGGED IN AS ${userID}`, "DATABASE");
     try { clearInterval(checkVerified); } catch (_) { }
     const clientID = (Math.random() * 2147483648 | 0).toString(16);
     let mqttEndpoint = `wss://edge-chat.facebook.com/chat?region=pnb&sid=${userID}`;
@@ -251,7 +251,7 @@ function makeLogin(jar, email, password, loginOptions, callback, prCallback) {
                 const cookieData = JSON.parse("[\"" + utils.getFrom(val, "", "]") + "]");
                 jar.setCookie(utils.formatCookie(cookieData, "facebook"), "https://www.facebook.com");
             });
-            log.info("ULLASH FCA Logging in...");
+            log.info("NAZRUL-FCA YOR ID LOGIN DONE");
             const loginRes = await utils.post(
                 "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110",
                 jar,
@@ -397,7 +397,7 @@ function loginHelper(appState, email, password, globalOptions, callback, prCallb
 
     mainPromise
         .then(async () => {
-            log.info('ULLASH FCA Login successful');
+            log.info('NAZRUL FCA LOGIN SUCCESSFUL');
             callback(null, api);
         })
         .catch(e => {
