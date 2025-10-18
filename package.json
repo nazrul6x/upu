@@ -1,21 +1,10 @@
 {
-    "name": "cyber-fca",
-    "version": "2.0.0",
+    "name": "fca-nazrul",
+    "version": "0.2.5",
     "description": "A Facebook chat api for messenger bots.",
     "keywords": [
         "facebook",
-        "chat",
-        "api",
-        "fca",
-        "messenger",
-        "chatbot",
-        "ULLASH",
-        "CYBER-BOT-COMMUNITY",
-        "FCA",
-        "Facebook chat api",
-        "massager bot api",
-        "cyber-fca",
-        "ullash-fca"
+        "nazrul-fca"
     ],
     "homepage": "",
     "repository": {
@@ -23,7 +12,7 @@
         "url": ""
     },
     "license": "MIT",
-    "author": "MAHBUB-ULLASH",
+    "author": "NAZRUL",
     "type": "commonjs",
     "main": "index.js",
     "directories": {
